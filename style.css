@@ -35,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-size: 100%;
-    background: linear-gradient(68.15deg, #007fff 16.62%, #fff 85.61%);
+    
 }
 ol, ul {
     list-style: none;
@@ -53,19 +53,82 @@ table {
     border-spacing: 0;
 }
 
+.navegacao{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-top: 24px;
+    font-weight: 400;
+    text-shadow: 4px 5px 4px rgb(0, 0, 0, 0.25);
+    background: linear-gradient(30.15deg, #fafdfd 60.62%, #007fff 99.61%);
+}
 
+.navegacao img{
+    margin-top: -30px;
+}
+
+.navegacao .nav-link{
+    color: #373737;
+    font-size:24px;
+}
 
 .rodape{
-    background: #007fff;
     width: 100%;
     text-align: center;
     padding: 20px;
+    background: linear-gradient(30.15deg, #fafdfd 60.62%, #007fff 99.61%);
+    
+}
+
+.corpo{
+    border-top: 0.4px solid #aeaeae;
+    border-bottom: 0.4px solid #aeaeae;
+   
+}
+
+.conteudo-principal{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    padding:32px;
+    margin-bottom:48px;
+    background: #fff;
+    border-bottom: 0.4px solid #aeaeae;
+}
+
+.texto-principal{
+    text-shadow: 4px 5px 4px rgb(0, 0, 0, 0.25);
+    margin-top: 36px;
+}
+
+
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 102px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 4px 5px 4px rgb(0, 0, 0, 0.25);
     
     
 }
 
+.conteudo-secundario img{
+    width:105px;
+    height:105px;
+}
+.nav-link{
+    color: #FFF2E7;
+    font-weight:400;
+    font-size: 18px;
+}
+
+
 .carousel-inner{
-    height: 800px;
+    height: 400px;
    
 }
 
