@@ -77,6 +77,24 @@ table {
     height: 100%;
 }
 
+.produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    text-shadow: 4px 5px 4px rgb(0, 0, 0, 0.25);
+    padding-bottom: 158px;
+    padding-top: 48px;
+
+}
+
+.produtos .sub-produto{
+    display: flex;
+   flex-wrap: wrap;
+    gap: 200px;
+    padding:48px;
+}
+
 .rodape{
     display: flex;
     justify-content:space-between;
@@ -123,6 +141,7 @@ table {
 .sub-conteudo{
     margin-top: 48px;
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-around;
     gap: 200px;
 }
