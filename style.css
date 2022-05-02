@@ -55,16 +55,17 @@ table {
 
 .navegacao{
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content:center;
-    padding-top: 24px;
+    padding-top: 70PX;
+    height: 95px;
     font-weight: 400;
     text-shadow: 4px 5px 4px rgb(0, 0, 0, 0.25);
     background: linear-gradient(30.15deg, #fafdfd 60.62%, #007fff 99.61%);
 }
 
 .navegacao img{
-    margin-top: -30px;
+    margin-top: -40px;
 }
 
 .navegacao .nav-link{
