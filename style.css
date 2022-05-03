@@ -73,6 +73,13 @@ table {
     font-size:24px;
 }
 
+.navegacao .nav-link:hover{
+    text-decoration: underline
+        rgb(0, 99, 180)20%;
+}
+
+
+
 .corpo{
     position: relative;
     height: 100%;
