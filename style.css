@@ -158,13 +158,6 @@ table {
 
 }
 
-.produtos .sub-produto{
-    display: flex;
-   flex-wrap: wrap;
-    gap: 200px;
-    padding:48px;
-}
-
 .rodape{
     display: flex;
     justify-content:space-between;
