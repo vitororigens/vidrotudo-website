@@ -147,16 +147,29 @@ table {
     transform: rotate(0deg);
 }
 
+.card-body{
+    display: flex;
+    width: 100%;
+    flex-wrap:wrap;
+    gap: 50px;
+}
+
 .produtos{
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-weight: 400;
     text-shadow: 4px 5px 4px rgb(0, 0, 0, 0.25);
-    padding-bottom: 158px;
-    padding-top: 48px;
+    padding: 48px;
+    margin-bottom: 250px;
 
 }
+.texto-produto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
 
 .rodape{
     display: flex;
@@ -214,18 +227,7 @@ table {
 }
 
 
-.sub-conteudo{
-    margin-top: 48px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    gap: 100px;
-}
 
-.sub-conteudo img{
-    width:250px;
-    height:255px;
-}
 
 
 .conteudo-terciario{
