@@ -53,29 +53,103 @@ table {
     border-spacing: 0;
 }
 
-.navegacao{
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#header{
     display: flex;
-    align-items:center;
-    justify-content:center;
-    padding-top: 70PX;
-    height: 95px;
-    font-weight: 400;
-    text-shadow: 4px 5px 4px rgb(0, 0, 0, 0.25);
+    align-items: center;
+    padding: 1rem;
+    height: 70px;
+    box-sizing: border-box;
+    justify-content: space-between;
     background: linear-gradient(30.15deg, #fafdfd 60.62%, #007fff 99.61%);
 }
-
-.navegacao img{
-    margin-top: -40px;
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
 }
 
-.navegacao .nav-link{
+#menu a{
+    display: block;
+    padding: .5rem;
     color: #373737;
     font-size:24px;
 }
 
-.navegacao .nav-link:hover{
+#menu a:hover{
     text-decoration: underline
         rgb(0, 99, 180)20%;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 600px){
+    #btn-mobile{
+        display:block;
+    }
+    #menu{
+        display:block; 
+       position:absolute;
+       width:100%;
+       top: 70px;
+       right: 0;
+       background: linear-gradient(30.15deg, #fafdfd 60.62%, #007fff 99.61%);
+       height: 0;
+       z-index: 1000;
+       transition: .6s;
+       visibility: hidden;
+       overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height:calc(100vh - 70px);
+        visibility: visible;
+    }
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px  solid rgba(0, 0, 0, .05);
+        text-align: center;
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding: 1px;
+
+    }
+    #hamburger{
+        width:20px;
+        border-top: 2px solid;
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 }
 
 
@@ -160,6 +234,7 @@ table {
     font-weight: 400;
     text-shadow: 4px 5px 4px rgb(0, 0, 0, 0.25);
     padding: 48px;
+    margin-top: 48px;
     margin-bottom: 250px;
 
 }
@@ -225,9 +300,16 @@ table {
     border-top: 0.4px solid #aeaeae;
 
 }
-
-
-
+.sub-conteudo{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 48px;
+    flex-wrap: wrap;
+}
+.sub-conteudo img{
+    width: 250px;
+}
 
 
 .conteudo-terciario{

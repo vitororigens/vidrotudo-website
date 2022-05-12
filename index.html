@@ -14,31 +14,19 @@
 </head>
 
 <body>
-    <header class="navegacao">
-        <ul class="nav justify-content-center">
-            <li>
-                <a class="navbar-brand" href="#">
-                    <img src="/img/LOGO2.png" height="150px" alt="logo da empresa">
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html">Home</a>
-            </li>
-          <!-- <li>
-                <a class="nav-link" href="#">Orçamento online</a>
-            </li> --> 
-            <li>
-                <a class="nav-link" href="/product.html">Produtos e Serviços</a>
-            </li>
-            <li>
-                <a class="nav-link" href="/contact.html">Contatos</a>
-            </li>
-            <li>
-                <a class="nav-link" href="/about.html">Sobre</a>
-            </li>
-
-        </ul>
-
+    <header id="header">
+        <a href="/index.html"><img src="/img/LOGO2.png" alt="" height="140px"></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/product.html">Produtos e Serviços</a></li>
+                <li><a href="/contact.html">Contatos</a></li>
+                <li><a href="/about.html">Sobre</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="corpo">
         <section class="background">
