@@ -443,6 +443,136 @@ table {
         padding-top: 80px;
 
  }
+
+/*botao flutuante*/
+  .fab{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+  }
+
+  .fab .title{
+    position:absolute;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 160px;
+    bottom: -10px;
+    z-index: 20;
+    font-size: 3vh;
+    margin: auto;
+    font-weight: 400;
+     text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.705);
+  }
+  
+  .fab button{
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: rgb(52, 52, 52);
+    border: none;
+    box-shadow: 0 1px 5px rgba(0,0,0,.4);
+    font-size: 24px;
+    color: white;
+      
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  .fab button:focus{
+    outline: none;
+  }
+  
+  .fab button.main{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #5b19b7;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+  }
+  
+  .fab button.main:before{
+    content: '⏚';
+  }
+  
+  .fab ul{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    padding:0;
+    padding-right:5px;
+    margin:0;
+    list-style:none;
+    z-index:10;
+    
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  .fab ul li{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: -10%;
+    opacity: 0;
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    transition: .3s ease-out;
+  }
+  
+  .fab ul li a{
+    margin-right:10px;
+    white-space: nowrap;
+    display: block;
+    margin-top: 10px;
+    background-color: rgb(52, 52, 52);
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    border-radius:3px;
+    height: 24px;
+    padding: 5px;
+    font-size: 18px;
+    text-decoration: none;
+
+    
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  .fab.show button.main,
+  .fab.show button.main{
+    outline: none;
+    background-color: rgb(255, 115, 0);
+    box-shadow: 0 3px 8px rgba(0,0,0,.5);
+   }
+   
+  .fab.show button.main:before,
+  .fab.show button.main:before{
+    content: '↑';
+  }
+  
+  .fab.show button.main + ul,
+  .fab.show button.main + ul{
+    bottom: 70px;
+  }
+  
+  .fab.show button.main + ul li,
+  .fab.show button.main + ul li{
+    margin-bottom: 10px;
+    opacity: 1;
+  }
+  
+  .fab.show button.main + ul li:hover label,
+  .fab.show button.main + ul li:hover label{
+    opacity: 1;
+  }
   
 
  @media (max-width: 800px){
