@@ -657,4 +657,14 @@ table {
         border-top: 0.4px solid #aeaeae;
         
     }
+    .rodape{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        
+    }
+    
+    .fab {
+        opacity: 0;
+    }
 }
