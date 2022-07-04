@@ -575,7 +575,7 @@ table {
   }
   
 
- @media (max-width: 800px){
+ @media (max-width: 950px){
     #btn-mobile{
         display:block;
     }
