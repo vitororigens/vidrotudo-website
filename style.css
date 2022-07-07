@@ -472,9 +472,10 @@ h1:after {
 .sub-conteudo {
     display: flex;
     align-items: center;
+    justify-content:center;
     gap: 50px;
     padding: 48px;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
 .sub-conteudo img {
