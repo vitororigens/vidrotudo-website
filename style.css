@@ -141,7 +141,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+nav{
+    
+}
 .dropdown {
     background: #007fff;
     display: flex;
@@ -229,6 +231,9 @@ table {
 }
 
 #header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -698,7 +703,7 @@ h1:after {
         display: block;
         position: absolute;
         width: 100%;
-        top: 170px;
+        top: 120px;
         right: 0;
         background: linear-gradient(30.15deg, #fafdfd 60.62%, #007fff 99.61%);
         height: 0;
@@ -768,6 +773,10 @@ h1:after {
     #img-slide {
         width: 100%;
 
+    }
+    iframe{
+        display: flex;
+        width: 100%;
     }
 
     .rodape {
