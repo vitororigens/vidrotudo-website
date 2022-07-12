@@ -19,7 +19,7 @@ btnMobile.addEventListener('click', toggleMenu)
 btnMobile.addEventListener('touchstart', toggleMenu)
 
 
-var i = 0;
+/*var i = 0;
 // var A = 0;
 var tag = document.getElementById("text");
 var html = document.getElementById("text").innerHTML;
@@ -36,7 +36,7 @@ function typeWriter() {
   //console.log(document.getElementById("text").innerHTML);
 }
 
-typeWriter();
+typeWriter();*/
 
 
 
@@ -58,3 +58,21 @@ document.querySelectorAll('.fab ul li button').forEach((item) => {
     toggleFAB('.fab');
   });
 });
+
+
+//slide transition
+
+let count = 1;
+document.getElementById("radio1").checked = true;
+setInterval(function(){
+    nextImage();
+},5000)
+
+function nextImage(){
+    count++;
+    if(count>3){
+        count = 1;
+    }
+
+    document.getElementById("radio" + count).checked = true;
+}
