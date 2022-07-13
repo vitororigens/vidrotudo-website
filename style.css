@@ -457,13 +457,6 @@ nav{
             text-align: center;
         }
 
-        .slide p {
-            color: #fff;
-            width: 800px;
-            text-align: center;
-        }
-
-
         .manual-navigation {
             position: absolute;
             width: 800px;
@@ -796,6 +789,12 @@ h1:after {
 @media (max-width: 950px) {
     #btn-mobile {
         display: block;
+    }
+
+    #header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
     }
 
     #menu {
