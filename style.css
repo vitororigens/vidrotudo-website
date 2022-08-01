@@ -541,17 +541,7 @@ h1 {
 
 }
 
-h1:after {
-    content: '';
-    display: inline-block;
-    background-color: white;
-    margin-left: 2px;
-    height: 25px;
-    width: 4px;
-    animation: cursor 0.1s infinite;
 
-
-}
 
 
 .conteudo-secundario {
