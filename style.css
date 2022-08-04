@@ -765,17 +765,18 @@ h1 {
         display: block;
     }
 
-    #header {
+    #stick{
         position: sticky;
         top: 0;
-        z-index: 10;
+        z-index: 15;
     }
+    
 
     #menu {
         display: block;
         position: absolute;
         width: 100%;
-        top: 120px;
+        top: 170px;
         right: 0;
         background: linear-gradient(30.15deg, #fafdfd 60.62%, #007fff 99.61%);
         height: 0;
@@ -823,6 +824,7 @@ h1 {
         margin-top: 5px;
         transition: .3s;
         position: relative;
+        border: none;
     }
 
     #nav.active #hamburger {
