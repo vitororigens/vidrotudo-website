@@ -763,6 +763,10 @@ h1 {
 
 
 @media (max-width: 950px) {
+
+    #header {
+        height: 90px;
+    }
     #btn-mobile {
         display: block;
     }
@@ -778,7 +782,7 @@ h1 {
         display: block;
         position: absolute;
         width: 100%;
-        top: 170px;
+        top: 140px;
         right: 0;
         background: linear-gradient(30.15deg, #fafdfd 60.62%, #007fff 99.61%);
         height: 0;
