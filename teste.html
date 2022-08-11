@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;}
+
+    .slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+    </style>
+</head>
+<body>
+    <ul class="slider">
+        <li>
+              <input type="radio" id="slide1" name="slide" checked>
+              <label for="slide1"></label>
+              <img src="/img/img01.jpg" />
+        </li>
+        <li>
+              <input type="radio" id="slide2" name="slide">
+              <label for="slide2"></label>
+              <img src="/img/img02.jpg" />
+        </li>
+        <li>
+              <input type="radio" id="slide3" name="slide">
+              <label for="slide3"></label>
+              <img src="/img/img03.jpg" />
+        </li>
+    </ul>
+    <script>
+        const btn = document.querySelectorAll('.radio-btn')
+        listItems.forEach(item => {
+            item.onclick = () =>{
+                listItems.forEach(item => item.classList.remove('active'))
+            item.classList.add('active')
+            }
+
+            
+        })
+    </script>
+    
+</body>
+</html>

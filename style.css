@@ -426,7 +426,7 @@ table {
 .typewrite {
     overflow: hidden;
     z-index: 4;
-    width: 800px;
+    width: 100%;
     height: 200px;
 
 }
@@ -457,19 +457,20 @@ table {
 
 .slide h1 {
     color: #fff;
-    width: 800px;
+    width: 100%;
     text-align: center;
 }
 .slide p {
     color: #fff;
-    width: 800px;
+    width: 100%;
     text-align: center;
 }
 
 .manual-navigation {
     position: absolute;
-    width: 800px;
+    width: 100%;
     margin-top: -5px;
+    margin-left: -40px;
     display: flex;
     justify-content: center;
 
@@ -518,8 +519,9 @@ table {
 
 .navigation-auto {
     position: absolute;
-    width: 800px;
+    width: 100%;
     margin-top: 204px;
+    margin-left: -40px;
     display: flex;
     justify-content: center;
 }
